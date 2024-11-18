@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Bold.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/Roboto-Thin.ttf') format('ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-app {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    align-content: center;
+}
+
+.container-app h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: darkblue;
+}
+  
+.container-app h2, h4 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.container-app .container-auth {
+    padding: 10px;
+}
+
+.container-auth .btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.container-auth a {
+    text-decoration: none;
+}
+
+.btn a {
+    text-decoration: none;
+    
+}
+
+.signin {
+    background-color: #4a90e2;
+}
+
+.signup {
+    background-color: #5cb85c;
+}
+
+.signin:hover {
+    background-color: #357abd; /* Darker blue on hover */
+}
+
+.signup:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}

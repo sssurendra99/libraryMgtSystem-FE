@@ -1,0 +1,30 @@
+.container-form-input input {
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.container-form-select select, option {
+    width: 315px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.container-form-submit input {
+    padding: 10px 40px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+p {
+    font-weight: 200;
+    font-size: 1rem;
+
+    padding: 10px;
+    margin: 10px 0;
+}
