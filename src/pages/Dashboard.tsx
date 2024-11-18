@@ -3,7 +3,6 @@ import BooksList from "../components/BooksList";
 import DashboardLayout from "../layouts/app-layouts/DashboardLayout";
 import { AuthUser, AuthContext} from "../context/authContext"
 import { jwtDecode, JwtPayload } from "jwt-decode";
-import BookForm from "../components/BookForm";
 
 interface CustomJwtPayload extends JwtPayload {
     role: string
@@ -38,7 +37,6 @@ function Dashboard(){
             <DashboardLayout>
                 <div className="container-middle-box">
                     <BooksList />
-                    <BookForm/>
                 </div>
             </DashboardLayout>
         </AuthContext.Provider>

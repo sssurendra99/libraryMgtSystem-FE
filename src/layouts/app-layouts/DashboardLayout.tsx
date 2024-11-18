@@ -1,8 +1,9 @@
 import "./DashboardLayout.css";
 import Logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { useAuthContext } from "../../context/authContext";
+import BookForm from "../../components/BookForm";
 
 interface DashboardLayoutProps {
     children : React.ReactNode
@@ -13,6 +14,11 @@ interface DashboardLayoutProps {
 const DashboardLayout : FC<DashboardLayoutProps> = ({children}) => {
 
     const authUser = useAuthContext();
+
+    const [isBookModalOpen, setIsBookModalOpen] = useState(false);
+
+    const openBookModal = () => setIsBookModalOpen(true);
+    const closeBookModal = () => setIsBookModalOpen(false)
 
     return (
         <>
@@ -30,7 +36,7 @@ const DashboardLayout : FC<DashboardLayoutProps> = ({children}) => {
         
         <main>
             <div className="container-operations">
-                <button className="add-book">
+                <button className="add-book" onClick={openBookModal}>
                     Add Book
                 </button>
                 <button className="add-member">
@@ -40,11 +46,20 @@ const DashboardLayout : FC<DashboardLayoutProps> = ({children}) => {
             <div className="container-dashboard-main">
                 {children}
             </div>
+
+            {isBookModalOpen && (
+            <div className="modal-overlay">
+                <div className="modal-content">
+                    <BookForm closeBookModal={closeBookModal}/>
+                    </div>
+                </div>
+            )}
         </main>
 
         <footer>
             <p>&copy; 2024 SSSurendra.co. All rights reserved.</p>
         </footer>
+        
         </>
     );
 }

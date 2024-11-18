@@ -35,7 +35,12 @@ const bookTypeMapper = (type: BookType) => {
 
 type Schema = z.infer<typeof schema>;
 
-const BookForm = ( ) => {
+
+interface BookFormProps {
+    closeBookModal: () => void;
+}
+
+const BookForm = ({closeBookModal}: BookFormProps ) => {
 
     const { register, handleSubmit, reset } = useForm<Schema>({
         resolver: zodResolver(schema),
@@ -60,6 +65,9 @@ const BookForm = ( ) => {
 
     return(
         <div className="container-book-form">
+            <button className="close-btn" onClick={closeBookModal}>
+                X
+            </button>
             <div className="container-form">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="container-form-input">
