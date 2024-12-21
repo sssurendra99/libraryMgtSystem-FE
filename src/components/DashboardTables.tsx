@@ -20,7 +20,7 @@ const DashboardTables = () => {
     };
     console.log(fetchAllBooks());
     fetchAllBooks();
-  }, []);
+  }, [activeView]);
 
   useEffect(()=>{
     const fetchAllMembers = async () => {
@@ -101,7 +101,6 @@ const DashboardTables = () => {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Email</th>
                 <th>Member Type</th>
                 <th>Actions</th>
               </tr>
