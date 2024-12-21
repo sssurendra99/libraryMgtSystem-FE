@@ -14,7 +14,7 @@ enum BookType {
 const schema = z.object({
     title: z.string(),
     author: z.string(),
-    publicationYear: z.number(),
+    publicationYear: z.string(),
     bookCategory: z.nativeEnum(BookType),
 })
 
@@ -79,7 +79,7 @@ const BookForm = ({closeBookModal}: BookFormProps ) => {
                         <input type="text" {...register("author", {required: true})} placeholder="Desmond Morris" />
                     </div>
                     <div className="container-form-input">
-                        <input type="date" {...register("author", {required: true})} placeholder="1967" />
+                        <input type="text" {...register("publicationYear", {required: true})} placeholder="1967" />
                     </div>
                     <div className="container-form-select">
                         <select {...register("bookCategory", {required: true})}>
@@ -88,7 +88,6 @@ const BookForm = ({closeBookModal}: BookFormProps ) => {
                             <option value={BookType.Fiction}>Fiction</option>
                             <option value={BookType.History}>History</option>
                             <option value={BookType.None}>Unknown</option>
-                            
                         </select>
                     </div>
                     <div className="container-form-submit">

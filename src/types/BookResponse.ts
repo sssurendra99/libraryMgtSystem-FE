@@ -6,3 +6,10 @@ export interface BookResponse {
     publicationYear: number, 
     bookCategory : number
 }
+
+export enum BookCategory {
+    Fiction,
+    History,
+    Child,
+    None
+}

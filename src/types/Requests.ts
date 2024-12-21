@@ -20,6 +20,6 @@ export interface SignInRequest {
 export interface BookPostRequest {
     title: string,
     author: string,
-    publicationYear: number,
+    publicationYear: string,
     bookCategory: number | undefined 
 }
