@@ -47,7 +47,7 @@ Before you start, make sure you have the following installed:
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/sssurendra99/libraryMgtSystem-FE.git
    ```
 
 2. **Install the dependencies**:
