@@ -21,7 +21,7 @@ export const getMemberById = async (id: string) => {
 };
 
 // Create a new member
-export const addMember = async (memberData: any) => {
+export const addMember = async (memberData: unknown) => {
     try {
         const response = await axiosAuthInstance.post('/Member/members', memberData);
         return response.data;
@@ -31,7 +31,7 @@ export const addMember = async (memberData: any) => {
 };
 
 // Update member details
-export const updateMember = async (id: string, updateData: any) => {
+export const updateMember = async (id: string, updateData: unknown) => {
     try {
         const response = await axiosAuthInstance.put(`/Member/members/${id}`, updateData);
         return response.data;

@@ -32,7 +32,7 @@ export const addBook = async (userData: BookPostRequest) => {
 };
 
 // Update an existing book
-export const updateBook = async (id: string, updateData: BookPostRequest) => {
+export const updateBook = async (updateData: BookPostRequest) => {
     try {
         const response = await axiosAuthInstance.put(`/Book/books`, updateData);
         return response.data;
