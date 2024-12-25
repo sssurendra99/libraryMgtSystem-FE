@@ -59,7 +59,6 @@ const DashboardTables = () => {
           <button className="add-book" onClick={openBookModal}>
             Add Book
           </button>
-          <button className="add-member">Add Member</button>
         </div>
       </div>
 
