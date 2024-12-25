@@ -11,6 +11,7 @@ Here, I focus on learning the Basics of React JS,
 - Structuring a ReactJS project
 - learning about how to use useMemo, useEffect, useCallback, useContext, useState.
 - learning about how to use the redirection in the React JS.
+- learning about state management in ReactJS with Redux toolkit.
 
 and the rest will be discussed in upcoming sections.
 
@@ -24,6 +25,7 @@ and the rest will be discussed in upcoming sections.
 - [Folder Structure](#folder-structure)
 - [React Learning Tips](#react-learning-tips)
 - [Screenshots](#screenshots)
+- [Resources](#resources)
 - [Comments and Feedbacks](#comments-and-feedbacks)
 
 ---
@@ -160,6 +162,15 @@ src
 ![](assets/image_1.png)
 ![](assets/image_2.png)
 
+---
+
+## Resources
+
+- [Lydia Hallie's articles](https://dev.to/lydiahallie) and her youtube channel.
+- [Coseden solutions youtube channel](https://www.youtube.com/@cosdensolutions)
+- [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn_web_development)
+- Read the [typescript handbook](https://www.react-hook-form.com/)
+- Read the [React dev docs](https://react.dev/learn)
 
 
 ---
